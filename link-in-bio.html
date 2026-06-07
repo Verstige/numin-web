@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@numin.ai — Link in Bio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #06060A; font-family: 'DM Sans', sans-serif; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+  
+  .avatar { width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(135deg, #00D4FF, #0040FF); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 800; margin-bottom: 20px; }
+  
+  .handle { font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 48px; }
+  .handle span { color: #00D4FF; }
+  
+  .links { display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 480px; }
+  
+  .link { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 20px 24px; text-decoration: none; color: #fff; transition: all 0.2s ease; }
+  .link:hover { border-color: rgba(0,212,255,0.4); background: rgba(0,212,255,0.05); transform: translateY(-2px); }
+  
+  .link-icon { font-size: 24px; flex-shrink: 0; }
+  .link-text { flex: 1; }
+  .link-title { font-size: 17px; font-weight: 500; margin-bottom: 2px; }
+  .link-sub { font-size: 14px; color: rgba(255,255,255,0.4); }
+  
+  .link-arrow { color: rgba(255,255,255,0.3); font-size: 20px; }
+  
+  .footer { margin-top: 60px; font-size: 14px; color: rgba(255,255,255,0.25); }
+</style>
+</head>
+<body>
+
+<div class="avatar">N</div>
+<div class="handle">@numin.ai</div>
+
+<div class="links">
+  <a href="https://landing-production-7420.up.railway.app" class="link" target="_blank">
+    <div class="link-icon">🚀</div>
+    <div class="link-text">
+      <div class="link-title">See the Full System</div>
+      <div class="link-sub">6 AI agents · Pricing · How it works</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+  
+  <a href="mailto:hello@numin.io" class="link" target="_blank">
+    <div class="link-icon">📧</div>
+    <div class="link-text">
+      <div class="link-title">Get in Touch</div>
+      <div class="link-sub">hello@numin.io</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+  
+  <a href="https://landing-production-7420.up.railway.app/demo" class="link" target="_blank">
+    <div class="link-icon">🎙️</div>
+    <div class="link-text">
+      <div class="link-title">Book a Demo</div>
+      <div class="link-sub">See Numin live in action</div>
+    </div>
+    <div class="link-arrow">→</div>
+  </a>
+</div>
+
+<div class="footer">numin.io</div>
+
+</body>
+</html>

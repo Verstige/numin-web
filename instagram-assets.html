@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numin — Instagram Assets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #06060A; font-family: 'DM Sans', sans-serif; color: #fff; }
+  
+  /* Asset 1: Hook Post */
+  .asset { width: 1080px; height: 1080px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px; position: relative; }
+  .asset::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 30% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(0, 64, 255, 0.06) 0%, transparent 60%); pointer-events: none; }
+  
+  .eyebrow { font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #00D4FF; margin-bottom: 32px; font-weight: 500; }
+  
+  .headline { font-family: 'Syne', sans-serif; font-size: 82px; font-weight: 800; line-height: 1.05; text-align: center; margin-bottom: 40px; max-width: 900px; }
+  .headline .accent { color: #00D4FF; }
+  
+  .sub { font-size: 28px; color: rgba(255,255,255,0.6); text-align: center; max-width: 700px; line-height: 1.5; margin-bottom: 60px; }
+  
+  .badge { display: inline-flex; align-items: center; gap: 12px; background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.3); border-radius: 100px; padding: 16px 32px; font-size: 22px; font-weight: 500; }
+  .badge-dot { width: 10px; height: 10px; background: #00D4FF; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  
+  .brand { position: absolute; bottom: 60px; font-size: 20px; letter-spacing: 3px; color: rgba(255,255,255,0.3); }
+  
+  /* Asset 2: 6 Agents Carousel */
+  .asset2 { width: 1080px; height: 1080px; padding: 80px; }
+  .asset2 .top { margin-bottom: 48px; }
+  .asset2 .title { font-family: 'Syne', sans-serif; font-size: 64px; font-weight: 800; margin-bottom: 16px; }
+  .asset2 .subtitle { font-size: 26px; color: rgba(255,255,255,0.5); }
+  
+  .agents-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .agent-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 32px; }
+  .agent-num { font-size: 13px; color: #00D4FF; letter-spacing: 3px; margin-bottom: 12px; }
+  .agent-name { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+  .agent-desc { font-size: 18px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+  
+  /* Asset 3: Pricing Post */
+  .asset3 { width: 1080px; height: 1080px; padding: 80px; flex-direction: column; justify-content: center; }
+  .asset3 .title { font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 800; text-align: center; margin-bottom: 16px; }
+  .asset3 .subtitle { font-size: 26px; color: rgba(255,255,255,0.5); text-align: center; margin-bottom: 64px; }
+  
+  .tiers { display: flex; gap: 24px; align-items: flex-end; }
+  .tier { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 32px; flex: 1; }
+  .tier.featured { border-color: #00D4FF; background: rgba(0,212,255,0.05); }
+  .tier-name { font-size: 16px; color: #00D4FF; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; }
+  .tier-price { font-family: 'Syne', sans-serif; font-size: 48px; font-weight: 800; margin-bottom: 8px; }
+  .tier-price span { font-size: 24px; color: rgba(255,255,255,0.4); }
+  .tier-tag { font-size: 18px; color: rgba(255,255,255,0.5); }
+</style>
+</head>
+<body>
+
+<!-- ASSET 1: Hook Post -->
+<div class="asset">
+  <div class="eyebrow">AI Business Automation</div>
+  <div class="headline">I built an AI team that costs <span class="accent">less than a VA</span></div>
+  <div class="sub">6 AI agents. 24/7 operations. $497/mo. Hardware shipped to your door.</div>
+  <div class="badge"><div class="badge-dot"></div> Starting at $497/mo</div>
+  <div class="brand">@NUMIN.AI</div>
+</div>
+
+<!-- ASSET 2: 6 Agents Carousel -->
+<div class="asset asset2">
+  <div class="top">
+    <div class="title">6 AI agents.<br>Every role covered.</div>
+    <div class="subtitle">One Mac mini. Your entire ops stack.</div>
+  </div>
+  <div class="agents-grid">
+    <div class="agent-card">
+      <div class="agent-num">01</div>
+      <div class="agent-name">CEO Agent</div>
+      <div class="agent-desc">Strategic decisions, goal tracking, performance oversight</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-num">02</div>
+      <div class="agent-name">Sales Agent</div>
+      <div class="agent-desc">Lead qualification, follow-ups, pipeline management</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-num">03</div>
+      <div class="agent-name">Support Agent</div>
+      <div class="agent-desc">Ticket resolution, FAQ, customer happiness</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-num">04</div>
+      <div class="agent-name">Marketing Agent</div>
+      <div class="agent-desc">Content, campaigns, audience growth</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-num">05</div>
+      <div class="agent-name">Finance Agent</div>
+      <div class="agent-desc">Invoicing, bookkeeping, financial reporting</div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-num">06</div>
+      <div class="agent-name">Project Agent</div>
+      <div class="agent-desc">Task coordination, deadlines, team alignment</div>
+    </div>
+  </div>
+</div>
+
+<!-- ASSET 3: Pricing Post -->
+<div class="asset asset3">
+  <div class="title">Your AI team.<br>Your budget.</div>
+  <div class="subtitle">Scale from solo to enterprise</div>
+  <div class="tiers">
+    <div class="tier">
+      <div class="tier-name">Solo</div>
+      <div class="tier-price">$497<span>/mo</span></div>
+      <div class="tier-tag">1 agent · startup tier</div>
+    </div>
+    <div class="tier featured">
+      <div class="tier-name">Startup</div>
+      <div class="tier-price">$997<span>/mo</span></div>
+      <div class="tier-tag">3 agents · growing biz</div>
+    </div>
+    <div class="tier">
+      <div class="tier-name">Scale</div>
+      <div class="tier-price">$2,497<span>/mo</span></div>
+      <div class="tier-tag">All 6 agents · full ops</div>
+    </div>
+    <div class="tier">
+      <div class="tier-name">Enterprise</div>
+      <div class="tier-price">$3,997<span>/mo</span></div>
+      <div class="tier-tag">Unlimited · white-glove</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
